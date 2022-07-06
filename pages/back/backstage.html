@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後端管理系統</title>
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <style>
+      @import url("style.css");
+    </style>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="plus_minus.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>後端管理系統</h1>
+         <a href="" target="_blank"> <button>回首頁</button></a>
+         <a href="" target="_blank"> <button>登出</button></a>
+    </header>
+    <div>
+        <table>
+            <tr class="tr1">
+                <td>ID</td>
+                <td>商品名稱</td>
+                <td>價格</td>
+                <td>庫存</td>
+                <td>介紹</td>
+                <td>功能</td>
+            </tr>
+            <tr>
+                <td>123123123</td>
+                <td>Spalding 籃球</td>
+                <td>NT$999</td>
+                <td><div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1"
+                        title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+"
+                        class="plus">
+                </div></td>
+                <td>室內球
+                </td>
+                <td>
+                <a href="" target="_blank"> <button class="button2">編輯資料</button></a>
+                <a href="" target="_blank"> <button class="button2">刪除資料</button></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+
+</html>

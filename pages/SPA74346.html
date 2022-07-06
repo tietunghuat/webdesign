@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(../assets/css/header_footer.css);
+        @import url(../assets/css/SPA.css);
+        @import url(../assets/css/sidecart.css);
+         @import url(../assets/css/star.css);
+    </style>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            
+            <a href="index.html"><div class="fire"><img src="../assets/image/logo.png" id="logo">
+            <img src="../assets/image/logo3.png" id="logo2">
+            </div></a>
+            <ul>
+                <a href="allproduct.html"><li>產品介紹</li></a>
+                <a href="member.html"><li>會員專區</li></a>
+                <a href="aboutus.html"><li>關於我們</li></a>
+                <a href="register.html"><li>登入/註冊</li></a>
+            </ul>
+            <div class="search"><input type="search" placeholder="請輸入關鍵字" style="height: 40px;">
+                <input src="../assets/image/search.png" type="image" style="height: 40px;">
+
+            </div> 
+        </div>
+    </header>
+
+    <div id="main">
+    <div class="contain">
+        <button id="cartcloseid" class="closebtn" onclick="closecart()"><img src="../assets/image/cart.png" width="40px;">購物車<br>&#9668</button>
+                <button id="cartopenid" class="openbtn" onclick="opencart()"><img src="../assets/image/cart.png" width="40px;">購物車<br>&#9658</button>
+                        
+                
+                <div id="CartSidebar" class="sidebar">
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closecart()">X</a>-->
+                    <div class="sidebarcontent">
+                        <div class="myproduct">
+                            <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                            <img src="../assets/basketball/indoor/SPA64281.jpg" class="smallpicture">
+
+                            <div id="ballname1" class="ballname">
+
+                            </div>
+
+                            <div class="qu">
+                                購買數量&nbsp : &nbsp
+                                <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                                共<label class="producttotal">1000<lebel>元
+                            </div>
+                        </div>
+                        <div class="myproduct">
+                            <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                            <img src="../assets/basketball/outside/SPA73298.png" class="smallpicture">
+
+                            <div id="ballname2" class="ballname">
+
+                            </div>
+
+                            <div class="qu">
+                                購買數量&nbsp : &nbsp
+                                <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                                共<label class="producttotal">1000<lebel>元
+                            </div>
+                        </div>
+                        <div class="myproduct">
+                            <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                            <img src="../assets/basketball/in_and_out/SPA74087.png" class="smallpicture">
+
+                            <div id="ballname3" class="ballname">
+
+                            </div>
+
+                            <div class="qu">
+                                購買數量&nbsp : &nbsp
+                                <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                                共<label class="producttotal">1000<lebel>元
+                            </div>
+                        </div>
+                        
+                        <div class="myproduct">
+                            <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                            <img src="../assets/basketball/star/curry.png" class="smallpicture">
+
+                            <div id="ballname4" class="ballname">
+
+                            </div>
+
+                            <div class="qu">
+                                購買數量&nbsp : &nbsp
+                                <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                                共<label class="producttotal">1000<lebel>元
+                            </div>
+                            
+                        </div>
+                    
+
+                        <div class="total">
+                            共<label class="carttotal">4000</label>元&nbsp
+                        </div>
+                        <button class="cartcheck" style="background-color: red; color:white;">移除</button>
+                        <button class="cartcheck" id="checkmycart">訂單結帳</button>
+                    </div>
+                </div>
+
+        <!--是否為會員-->
+
+                <div class="windows" id="checkwindows">
+                    
+                    <div class="windowscontent">
+                        <img class="windowsimg" style="background-image: url('../assets/image/basket.png');">
+                        <div class="windowsh1">
+                            <h1>是否為會員?</h1>
+                        </div>
+                        <div>
+                            <p><h3>親,您是否要使用會員身分訂購呢?</h3></p>
+                        </div>
+                        <div class="memberornot">
+                            
+                            <a href="../pages/visitorcart.html" target="_blank"><input type="button" class="memberbtn" id="notmember" value="使用訪客身分訂購"></a>
+                            <a href="../pages/cart.html" target="_blank"><input type="button" class="memberbtn" id="isamember" value="使用會員身分訂購"></a>
+                            
+                        </div>    
+                        
+                    </div>
+                    
+                </div>
+
+        <div class="detail">
+            <img src="../assets/basketball/indoor/SPA74346.jpg" id="main">
+            <h2>&nbsp; SPA74346</h2>
+            <h1>$800 &nbsp;</h1>
+            <hr size="5px" color="black" width="80%">
+            <p>
+                <span>材質:</span>高級合成皮
+            </p>
+            <p>
+                <span>適合場地:</span>室內
+            </p>
+            <p>
+                <span>規格:</span>6號球
+            </p>
+            <p>
+                <span>庫存:</span>100
+            </p>
+            <p>
+                <span>其他相關籃球:</span>
+            </p>
+            <a href="SPA64281.html"><img src="../assets/basketball/indoor/SPA64281.jpg" id="second" style="margin-left: 35%;"></a>
+            <a href="SPA74403.html"><img src="../assets/basketball/indoor/SPA74403.png" id="second"></a><br>
+            <div class="button">
+                <input type="button" value="-" id="reduce" onclick="reduce()">
+                <input type="text" value="1" id="mount">
+                <input type="button" value="+" id="plus" onclick="plus()">
+                <input type="button" value="加入購物車" id="join">                
+            </div>
+        </div>
+        <script>
+            var mount=document.getElementById("mount");
+            function plus(){
+                mount.value=parseInt(mount.value)+1;
+            }
+            function reduce(){
+                if(mount.value<=1){
+                    mount.value=1
+                }
+                else{
+                    mount.value=parseInt(mount.value)-1
+                }
+            }
+        </script>
+
+        <div class="message">
+            <h1 id="title">戰隊留言板</h1>
+            <div class="write">
+                <span>EMAIL:</span><br><input type="email"><br> 
+                <span>MESSAGE:</span><br><textarea  wrap="soft"></textarea>
+                <input type="button" value="SUBMIT" id="submit">
+            </div>
+            <hr color="#666666">
+            <div class="comment">
+                <div class="comment2">
+                    <img src="../assets/image/person.png" style="height: 125px; float: left;background-color: white;">
+                    <h2>a0123@gmail.com</h2>
+                    <p>這顆籃球真的很好用ccccccccccccccccccccccc</p>
+                    <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star" />
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star" />
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star" />
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star" />
+                            <label class="star star-1" for="star-1"></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="comment2">
+                    <img src="../assets/image/person.png" style="height: 125px; float: left;background-color: white;">
+                    <h2>a0123@gmail.com</h2>
+                    <p>這顆籃球真的很好用ccccccccccccccccccccccccc</p>
+                    <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star" />
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star" />
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star" />
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star" />
+                            <label class="star star-1" for="star-1"></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="comment2">
+                    <img src="../assets/image/person.png" style="height: 125px; float: left;background-color: white;">
+                    <h2>a0123@gmail.com</h2>
+                    <p>這顆籃球真的很好用ccccccccccccccccccccccc</p>
+                    <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star" />
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star" />
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star" />
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star" />
+                            <label class="star star-1" for="star-1"></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="footer">
+        <div class="footer1">
+            <h3 align="center">準星版權所有</h3>
+            <h3 align="center">email: a0906397408@gmail.com</h3>
+        </div>
+    </div>
+
+    <script>
+        function opencart() {
+          document.getElementById("CartSidebar").style.width = "30%";
+          document.getElementById("main").style.marginLeft = "30%";
+          document.getElementById("cartopenid").style.zIndex = "-1";
+
+        }
+        
+        function closecart() {
+          document.getElementById("CartSidebar").style.width = "0%";
+          document.getElementById("main").style.marginLeft= "0";
+          document.getElementById("cartopenid").style.zIndex = "1";
+        }
+
+        document.getElementById("ballname1").innerHTML="SPA64281";
+        document.getElementById("ballname2").innerHTML="SPA73298";
+        document.getElementById("ballname3").innerHTML="SPA74087";
+        document.getElementById("ballname4").innerHTML="Curry紀念版籃球";
+        
+
+        var windows = document.getElementById("checkwindows");
+        var btn = document.getElementById("checkmycart");
+
+        btn.onclick = function() {
+            windows.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == windows) {
+                windows.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>

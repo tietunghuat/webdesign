@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(../assets/css/header_footer.css);
+        @import url(../assets/css/allproduct.css);
+        @import url(../assets/css/sidecart.css);
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            
+            <a href="index.html"><div class="fire"><img src="../assets/image/logo.png" id="logo">
+            <img src="../assets/image/logo3.png" id="logo2">
+            </div></a>
+            <ul>
+                <a href="allproduct.html"><li>產品介紹</li></a>
+                <a href="member.html"><li>會員專區</li></a>
+                <a href="aboutus.html"><li>關於我們</li></a>
+                <a href="register.html"><li>登入/註冊</li></a>
+            </ul>
+            <div class="search"><input type="search" placeholder="請輸入關鍵字" style="height: 40px;">
+                <input src="../assets/image/search.png" type="image" style="height: 40px;">
+            </div> 
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="contain">
+            <button id="cartcloseid" class="closebtn" onclick="closecart()"><img src="../assets/image/cart.png" width="40px;">購物車<br>&#9668</button>
+            <button id="cartopenid" class="openbtn" onclick="opencart()"><img src="../assets/image/cart.png" width="40px;">購物車<br>&#9658</button>
+                    
+            
+            <div id="CartSidebar" class="sidebar">
+                <!--<a href="javascript:void(0)" class="closebtn" onclick="closecart()">X</a>-->
+                <div class="sidebarcontent">
+                    <div class="myproduct">
+                        <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                        <img src="../assets/basketball/indoor/SPA64281.jpg" class="smallpicture">
+
+                        <div id="ballname1" class="ballname">
+
+                        </div>
+
+                        <div class="qu">
+                            購買數量&nbsp : &nbsp
+                            <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                            共<label class="producttotal">1000<lebel>元
+                        </div>
+                    </div>
+                    <div class="myproduct">
+                        <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                        <img src="../assets/basketball/outside/SPA73298.png" class="smallpicture">
+
+                        <div id="ballname2" class="ballname">
+
+                        </div>
+
+                        <div class="qu">
+                            購買數量&nbsp : &nbsp
+                            <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                            共<label class="producttotal">1000<lebel>元
+                        </div>
+                    </div>
+                    <div class="myproduct">
+                        <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                        <img src="../assets/basketball/in_and_out/SPA74087.png" class="smallpicture">
+
+                        <div id="ballname3" class="ballname">
+
+                        </div>
+
+                        <div class="qu">
+                            購買數量&nbsp : &nbsp
+                            <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                            共<label class="producttotal">1000<lebel>元
+                        </div>
+                    </div>
+                    
+                    <div class="myproduct">
+                        <input type="checkbox" id="choose" class="choosepro" checked="checked">
+                        <img src="../assets/basketball/star/curry.png" class="smallpicture">
+
+                        <div id="ballname4" class="ballname">
+
+                        </div>
+
+                        <div class="qu">
+                            購買數量&nbsp : &nbsp
+                            <input type="number" min="1" max="999" value="1" id="quantity" class="amount" required>
+                            共<label class="producttotal">1000<lebel>元
+                        </div>
+                        
+                    </div>
+                
+
+                    <div class="total">
+                        共<label class="carttotal">4000</label>元&nbsp
+                    </div>
+                    <button class="cartcheck" style="background-color: red; color:white;">移除</button>
+                    <button class="cartcheck" id="checkmycart">訂單結帳</button>
+                </div>
+            </div>
+
+    <!--是否為會員-->
+
+            <div class="windows" id="checkwindows">
+                
+                <div class="windowscontent">
+                    <img class="windowsimg" style="background-image: url('../assets/image/basket.png');">
+                    <div class="windowsh1">
+                        <h1>是否為會員?</h1>
+                    </div>
+                    <div>
+                        <p><h3>親,您是否要使用會員身分訂購呢?</h3></p>
+                    </div>
+                    <div class="memberornot">
+                        
+                        <a href="../pages/visitorcart.html" target="_blank"><input type="button" class="memberbtn" id="notmember" value="使用訪客身分訂購"></a>
+                        <a href="../pages/cart.html" target="_blank"><input type="button" class="memberbtn" id="isamember" value="使用會員身分訂購"></a>
+                        
+                    </div>    
+                    
+                </div>
+                
+            </div>
+            <div class="room">
+                <h2>室內</h2>
+                <div>
+                    <div class="card">
+                        <a href="SPA64281.html"><div class="box"><img src="../assets/basketball/indoor/SPA64281.jpg"></div></a>
+                        <P id="number">SPA64281</P>
+                        <p id="introduction">白金NBA系列室內球</p>
+                        <a href="SPA64281.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card">
+                        <a href="SPA74346.html"><div class="box"><img src="../assets/basketball/indoor/SPA74346.jpg"></div></a>
+                        <P style="font-size:40px; font-weight: bold;line-height: 5px;">SPA74346</P>
+                        <p style="font-size: 25px;line-height: 30px;">2-Panel雙十字葉片<br>女子比賽用球</p>
+                        <a href="SPA74346.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card">
+                        <a href="SPA74403.html"><div class="box"><img src="../assets/basketball/indoor/SPA74403.png"></div></a>
+                        <P id="number">SPA74403</P>
+                        <p id="introduction">NBA指定用球</p>
+                        <a href="SPA74403.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                </div>
+                <h2>室外</h2>
+                <div>
+                    <div class="card1">
+                        <a href="SPA63817.html"><div class="box"><img src="../assets/basketball/outside/SPA63817.png"></div></a>
+                        <P style="font-size:40px; font-weight: bold;line-height: 5px;">SPA63817</P>
+                        <p style="font-size: 25px;line-height: 30px;">2-Panel雙十字葉片<br>室外用球</p>
+                        <a href="SPA63817.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card1">
+                        <a href="SPA73298.html"><div class="box"><img src="../assets/basketball/outside/SPA73298.png" ></div></a>
+                        <P id="number">SPA73298</P>
+                        <p id="introduction">Grip Control</p>
+                        <a href="SPA73298.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card1">
+                        <a href="SPA63251.html"><div class="box"><img src="../assets/basketball/outside/SPA63251.jpg" ></div></a>
+                        <P id="number">SPA63251</P>
+                        <p id="introduction">仿皮系列Legacy</p>
+                        <a href="SPA63251.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>    
+                    <div class="card1">
+                        <a href="SPA73299.html"><div class="box"><img src="../assets/basketball/outside/SPA73299.png" ></div></a>
+                        <P id="number">SPA73299</P>
+                        <p id="introduction">金色NBA系列室外用球</p>
+                        <a href="SPA73299.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                </div>
+                <h2>室內/外</h2>
+                <div>
+                    <div class="card">
+                        <a href="SPA74096.html"><div class="box"><img src="../assets/basketball/in_and_out/SPA74096.jpg" ></div></a>
+                        <P id="number">SPA74096</P>
+                        <p id="introduction">Never Flat</p>
+                        <a href="SPA74096.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card">
+                        <a href="SPA74077.html"><div class="box"><img src="../assets/basketball/in_and_out/SPA74077.jpg" ></div></a>
+                        <P id="number">SPA74077</P>
+                        <p id="introduction">金色NBA系列合成皮球</p>
+                        <a href="SPA74077.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card">
+                        <a href="SPA74087.html"><div class="box"><img src="../assets/basketball/in_and_out/SPA74087.png" ></div></a>
+                        <P id="number">SPA74087</P>
+                        <p id="introduction">銀色NBA系列合成皮球</p>
+                        <a href="SPA74087.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                </div>
+                <h2>明星球 </h2>
+                <div>
+                    <div class="card">
+                        <a href="kobe.html"><div class="box"><img src="../assets/basketball/star/Kobe.jpg" ></div></a>
+                        <P id="number">Kobe Bryant</P>
+                        <p id="introduction">簽名紀念版籃球</p>
+                        <a href="kobe.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card">
+                        <a href="james.html"><div class="box"><img src="../assets/basketball/star/James.png" ></div></a>
+                        <P id="number">LeBron James</P>
+                        <p id="introduction">簽名紀念版籃球</p>
+                        <a href="james.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                    <div class="card">
+                        <a href="curry.html"><div class="box"><img src="../assets/basketball/star/curry.png" ></div></a>
+                        <P id="number">Stephen Curry</P>
+                        <p id="introduction">簽名紀念版籃球</p>
+                        <a href="curry.html"><input type="button" value="了解更多!!" id="understand"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>>
+    <div class="footer">
+        <div class="footer1">
+            <h3 align="center">準星版權所有</h3>
+            <h3 align="center">email: a0906397408@gmail.com</h3>
+        </div>
+    </div>
+
+    <script>
+        function opencart() {
+          document.getElementById("CartSidebar").style.width = "30%";
+          document.getElementById("main").style.marginLeft = "30%";
+          document.getElementById("cartopenid").style.zIndex = "-1";
+        }
+        
+        function closecart() {
+          document.getElementById("CartSidebar").style.width = "0%";
+          document.getElementById("main").style.marginLeft= "0";
+          document.getElementById("cartopenid").style.zIndex = "1";
+        }
+
+        document.getElementById("ballname1").innerHTML="SPA64281";
+        document.getElementById("ballname2").innerHTML="SPA73298";
+        document.getElementById("ballname3").innerHTML="SPA74087";
+        document.getElementById("ballname4").innerHTML="Curry紀念版籃球";
+        
+
+        var windows = document.getElementById("checkwindows");
+        var btn = document.getElementById("checkmycart");
+
+        btn.onclick = function() {
+            windows.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == windows) {
+                windows.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>
